@@ -1,0 +1,12 @@
+version: '4'
+
+services:
+  db:
+    container_name: clj_contacts
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: theotokos21
+      POSTGRES_DB: clj_contacts
